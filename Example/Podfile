@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'CZQLessonCategoryKit_Example' do
+  pod 'CZQLessonCategoryKit', :path => '../'
+
+  target 'CZQLessonCategoryKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+    pod 'FBSnapshotTestCase'
+  end
+end
