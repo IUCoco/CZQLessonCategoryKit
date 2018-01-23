@@ -1,0 +1,6 @@
+framework module Pods_CZQLessonCategoryKit_Tests {
+  umbrella header "Pods-CZQLessonCategoryKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
