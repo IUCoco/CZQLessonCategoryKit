@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CZQLessonCategoryKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.3'
   s.summary          = 'CZQLessonCategoryKit.'
 
 # This description is used to generate tags and improve search results.
@@ -29,8 +29,16 @@ TODO: 分类组件 CZQLessonCategoryKit.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+#这里启用子组件方式
+#s.source_files = 'CZQLessonCategoryKit/Classes/**/*'
 
-  s.source_files = 'CZQLessonCategoryKit/Classes/**/*'
+  s.subspec 'Color' do |czqcolor|
+  czqcolor.source_files = 'CZQLessonCategoryKit/Classes/Color/**/*'
+  end
+
+  s.subspec 'Frame' do |czqframe|
+  czqframe.source_files = 'CZQLessonCategoryKit/Classes/Frame/**/*'
+  end
   
   # s.resource_bundles = {
   #   'CZQLessonCategoryKit' => ['CZQLessonCategoryKit/Assets/*.png']
